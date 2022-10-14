@@ -1,0 +1,297 @@
+body{
+    background-image: url("../Images/img.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    backdrop-filter: blur(10px);
+    height: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#contenedor {
+    border: 1px solid grey;
+    border-style: dashed;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 250px;
+    margin-bottom: 200px;
+}
+
+div.titulo {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+div.tituloInicio h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+}
+
+.subtitulo #informe{
+    font-family: 'Anton', sans-serif;
+    font-size: 1.8rem;
+    color: white;
+    text-align: left;
+    margin-left: 30%;
+}
+
+.experiencia {
+    margin-top: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+div.titulo #titulo{
+    font-family: 'Anton', sans-serif;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.linea {
+    border-top: 1px solid silver;
+    height: 2px;
+    max-width: 90%;
+    padding: 0;
+    margin: 20px auto 0 auto;
+}
+
+.menu {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+.menu a {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+}
+
+.menu #op {
+    text-decoration: none;
+}
+
+.formulario {
+    margin-left: 30%;
+}
+
+div.subtitulo #subtitulo{
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius:1%;
+}
+
+div.subtitulo #subtitulo{
+    font-family: 'Anton', sans-serif;
+    font-size: 2rem;
+    color: white;
+    text-align: left;
+    margin-left: 25%;
+}
+
+.formulario {
+    margin-left: 20%;
+    justify-content:center;
+    width:70%; 
+} 
+
+.respuestas{
+    margin-left: 30%;
+    justify-content:center;
+    width:70%; 
+}
+
+.formularioDates{
+    margin-left: 15%;
+    margin-right: 0%;
+    justify-content:center;
+    width:50%; 
+}
+
+div.form_bike, div.form_client, div.form_message, div.form_category, div.form_Reservation, div.form_dates {
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius:1%;
+    display: flex;
+}
+
+div.form_bike label, div.form_client label, div.form_message label, div.form_category label, div.form_Reservation label, div.form_dates label {
+    text-align: left;
+    color: white; 
+    font-family: 'Dosis', sans-serif;
+    font-size: 15px; 
+    margin-right: 20px;
+    width: 550px; 
+} 
+
+div.form_bike input, div.form_client input, div.form_message input, div.form_category input, div.form_Reservation input, div.form_dates input {
+    color: whitesmoke;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.233);
+    height:20px;  
+    width:400px;  
+    padding:15px 12px; 
+    text-align: center;
+    border-radius: 20px;
+} 
+
+div.respuestas label {
+    color: white; 
+    font-size: 20px; 
+    text-align: right; 
+    margin-left: 20%;
+}
+
+div.respuestas input {
+    color: white; 
+    background-color: transparent; 
+    font-size: 20px; 
+    text-align: left;  
+    border: none;
+}
+
+div.botones {
+    margin-top: 10%;
+}
+
+#buttonAdd{
+    height:20px;  
+    width:40px; 
+}
+
+div.form_bike button, div.form_client button, div.form_message button, div.form_category button, div.form_Reservation button, div.form_dates button {
+    margin-left: 0%;
+    margin-right: 10%;
+    height: 40px;
+    width: 150px;
+    margin-top: 15px;
+}
+
+.form-select {
+    height:40px;  
+    width:350px; 
+    color: whitesmoke;
+    background-color: rgba(255, 255, 255, 0.233);
+    border-radius:20px;
+    text-align: center;
+    border-color: transparent;
+}
+
+.seleccion{
+    display: flex;
+    height:25px;  
+    width:400px;
+}
+
+.seleccion #seleccionar{
+    border-radius:0px;
+    width: 350px;
+    background-color: rgba(255, 255, 255, 0.233);
+    color: whitesmoke;
+}
+
+.seleccion #client, #bike, #client2, #bike2, #status {
+    width: 400px;
+}
+
+.seleccion #add{
+    border-radius:0px;
+    margin-right: 0%;
+    margin-left: 0%;
+    width: 50px;
+    font-size: 1.2rem;
+}
+
+option{
+    background-color:grey;
+}
+
+div.tableBike, div.tableClient, div.tableMessage, div.tableCategory, div.tableReservation {
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-bottom: 1px;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content:center;
+    text-align: center;
+}
+
+td {
+    border-bottom: 1px solid #ddd;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: whitesmoke;
+    width: 150px;
+    text-align: center;
+}
+
+th {
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    color: whitesmoke;
+    text-align: center;
+}
+
+div.tableBike table, div.tableClient table, div.tableMessage table, div.tableCategory table, div.tableReservation table{
+    margin-left: 15%;
+    margin-right: 20%;
+}
+
+div.top_client table {
+    margin-left: 42%;
+    margin-right: 20%;
+}
+
+/*.modal-content{
+    background-color: black;
+}*/
+
+/*.modal-body{
+    background-color: red;
+}*/
+
+.modal-form {
+    justify-content:center;
+}
+
+#cerrar {
+    width: 20px;
+}
+
+.modal-form #labMod {
+    text-align: left;
+    color: black; 
+    font-family: 'Dosis', sans-serif;
+    font-size: 15px; 
+    margin-right: 20px;
+    width: 550px; 
+}
+
+.modal-form .inMod {
+    color: rgb(0, 0, 0);
+    border: none;
+    background-color: rgba(0, 0, 0, 0.199);
+    height:20px;  
+    width:470px;  
+    padding:15px 12px; 
+    text-align: center;
+    border-radius: 20px;
+}
+
+.modal-footer {
+    display: flex;
+}
+
+.modal-footer #buttonMod {
+    color: black;
+    width: 100px;
+    margin-right: 5px;
+    margin-left: 0px;
+}
