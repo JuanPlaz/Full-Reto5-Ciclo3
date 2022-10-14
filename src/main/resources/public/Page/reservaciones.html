@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+        <link rel="stylesheet" href="../CSS/Estilos.css">
+        <title>Reservaciones</title>
+    </head>
+    <body>
+        
+        <div class="titulo">
+            <br>
+            <h1 id="titulo">Misión 2022 - Reto número 5</h1>
+        </div>
+
+        <div class="linea"></div>
+
+        <!--Menu-->
+
+        <br>
+        <nav class="menu">
+            <a id="op" href="../index.html">Salir</a>
+            <a id="op" href="bike.html">Cloud</a>
+            <a id="op" href="cliente.html">Cliente</a>
+            <a id="op" href="mensajes.html">Mensajes</a>
+            <a id="" href="#">Reservaciones</a>
+            <a id="op" href="informe.html">Informe</a>
+        </nav>
+
+        <div class="linea"></div>
+
+        <!--Crud Reservation-->
+
+        <div class="subtitulo">
+            <br>
+            <h1 id="subtitulo">Sección reservaciones</h1>
+            <br><br>
+        </div>
+
+        <div class="form_Reservation">
+            <section class="formulario">
+                <label for="idReservation">Id</label>
+                <br>
+                <input type="number" placeholder="4056" id="idReservation" readonly>
+
+                <br><br>
+                <label for="startDate">startDate</label>
+                <br>
+                <input type="date" placeholder="Example" id="startDate">
+
+                <br><br>
+                <label for="devolutionDate">devolutionDate</label>
+                <br>
+                <input type="date" placeholder="Example" id="devolutionDate">
+
+                <br><br>
+                <label for="status">Status</label>
+                <div class="seleccion">
+                    <select class="form-control form-select category" aria-label="Default select example" id="status">
+                        <option selected>Seleccione un estado</option>
+                        <option value="1">completed</option>
+                        <option value="2">cancelled</option>
+                    </select>
+                </div>
+                
+                <br>
+                <label for="bike2">Cloud</label>
+                <div class="seleccion">
+                    <select class="form-control form-select category" aria-label="Default select example" id="bike2"></select>
+                </div>
+
+                <br>
+                <label for="client2">Client</label>
+                <div class="seleccion">
+                    <select class="form-control form-select category" aria-label="Default select example" id="client2"></select>
+                </div>
+            </section>
+            
+            <section class="botones">
+                <button type="button" class="btn btn-outline-light" onclick="crearReservation()" id="uno">Crear</button>
+                <button type="button" class="btn btn-outline-light" onclick="actualizarReservation()">Actualizar</button>
+                <button type="button" class="btn btn-outline-light" onclick="recargarReservation()">Recargar</button>
+            </section>
+        </div>
+
+        <div class="tableReservation">
+            
+            <table> 
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>startDate</th>
+                        <th>devolutionDate</th>
+                        <th>status</th>
+                        <th>cloud</th>
+                        <th>client</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+        
+                <tbody class="cuerpo" id="contenidoTablaReservation">
+                    
+                </tbody>
+            </table>
+            <br><br>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+        <script src="../JS/app.js"></script>
+
+    </body>
+</html>
